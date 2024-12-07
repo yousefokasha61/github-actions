@@ -7,11 +7,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Welcome Message
-        run: echo "Hello, World!"
-
-      - name: List Files
-        run: ls -a
-
-      - name: Read File
-        run: cat README.md
+      - name: List and Read File
+        run: |
+          echo "Hello, World!"
+          ls -ltra
+          cat README.md
